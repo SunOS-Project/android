@@ -7,4 +7,6 @@
   <default remote="clo-la"/>
   <include name="snippets/system.xml"/>
   <include name="snippets/vendor.xml"/>
+  <!-- Obsolete -->
+  <include name="snippets/obsolete.xml"/>
 </manifest>
