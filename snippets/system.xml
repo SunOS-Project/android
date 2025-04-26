@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://git.codelinaro.org/clo/la" name="clo-la"/>
-  <default remote="clo-la" revision="dummy_revision" sync-c="true" sync-tags="false"/>
   <project remote="clo-la" name="device/amlogic/yukawa" path="device/amlogic/yukawa" revision="536bb37275f4552a7aa3246e24784dd170e32913" upstream="refs/heads/ks-aosp.lnx.15.0.r1-rel" groups="aosp-android15-release,device,pdk,yukawa,qc-common-sys-intf,vsdk_exc_L2,vsdk_exc_L1,vsdk_exc_L3"/>
   <project remote="clo-la" name="device/amlogic/yukawa-kernel" path="device/amlogic/yukawa-kernel" revision="749334b221b38ae37294c79c34e82718a35873dc" upstream="refs/heads/ks-aosp.lnx.15.0.r1-rel" groups="aosp-android15-release,device,pdk,yukawa,qc-common-sys-intf,vsdk_exc_L2,vsdk_exc_L1,vsdk_exc_L3"/>
   <project remote="clo-la" name="device/common" path="device/common" revision="a52741c2a3ad301c21a05e8b10ef5f508c993bb4" upstream="refs/heads/ks-aosp.lnx.15.0.r1-rel" groups="aosp-android15-release,pdk,pdk-cw-fs,qc-common-sys-intf,vsdk_exc_L2,vsdk_exc_L1,vsdk_exc_L3"/>
