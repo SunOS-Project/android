@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Art -->
+  <remove-project name="platform/art" />
+  <project path="art" name="SunOS-Project/android_art" remote="sun" />
+
+  <!-- Bionic -->
+  <remove-project name="platform/bionic" />
+  <project path="bionic" name="SunOS-Project/android_bionic" remote="sun" />
+
+  <!-- Build -->
+  <remove-project name="platform/build/blueprint" />
+  <project path="build/blueprint" name="SunOS-Project/android_build_blueprint" remote="sun" />
+  <remove-project name="platform/build_repo" />
+  <project path="build/make" name="SunOS-Project/android_build" remote="sun" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <remove-project name="platform/build/release" />
+  <project path="build/release" name="SunOS-Project/android_build_release" remote="sun" />
+
+  <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="SunOS-Project/android_build_soong" remote="sun" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Bootable Recovery -->
+  <remove-project name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="SunOS-Project/android_bootable_recovery" remote="sun" />
+
+  <!-- Device -->
+  <remove-project name="device/qcom/sepolicy" />
+  <project path="device/qcom/sepolicy" name="SunOS-Project/android_device_qcom_sepolicy" remote="sun" />
+
+  <!-- Development -->
+  <remove-project name="platform/development" />
+  <project path="development" name="SunOS-Project/android_development" remote="sun" />
+
+  <!-- External -->
+  <remove-project name="platform/external/arm-optimized-routines" />
+  <project path="external/arm-optimized-routines" name="SunOS-Project/android_external_arm-optimized-routines" remote="sun" />
+  <remove-project name="platform/external/avb" />
+  <project path="external/avb" name="SunOS-Project/android_external_avb" remote="sun" />
+  <remove-project name="platform/external/cronet" />
+  <project path="external/cronet" name="SunOS-Project/android_external_cronet" remote="sun" />
+  <remove-project name="platform/external/dtc" />
+  <project path="external/dtc" name="SunOS-Project/android_external_dtc" remote="sun" />
+  <remove-project name="platform/external/e2fsprogs" />
+  <project path="external/e2fsprogs" name="SunOS-Project/android_external_e2fsprogs" remote="sun" />
+  <remove-project name="platform/external/fastrpc" />
+  <project path="external/fastrpc" name="SunOS-Project/android_external_fastrpc" remote="sun" />
+  <remove-project name="platform/external/gptfdisk" />
+  <project path="external/gptfdisk" name="SunOS-Project/android_external_gptfdisk" remote="sun" />
+  <remove-project name="platform/external/jemalloc_new" />
+  <project path="external/jemalloc_new" name="SunOS-Project/android_external_jemalloc-new" remote="sun" />
+  <remove-project name="platform/external/json-c" />
+  <project path="external/json-c" name="SunOS-Project/android_external_json-c" remote="sun" />
+  <remove-project name="platform/external/kotlinx.coroutines" />
+  <project path="external/kotlinx.coroutines" name="SunOS-Project/android_external_kotlinx.coroutines" remote="sun" />
+  <remove-project name="platform/external/mksh" />
+  <project path="external/mksh" name="SunOS-Project/android_external_mksh" remote="sun" />
+  <remove-project name="platform/external/tinycompress" />
+  <project path="external/tinycompress" name="SunOS-Project/android_external_tinycompress" remote="sun" />
+  <remove-project name="platform/external/wpa_supplicant_8" />
+  <project path="external/wpa_supplicant_8" name="SunOS-Project/android_external_wpa_supplicant_8" remote="sun" />
+  <remove-project name="platform/external/zstd" />
+  <project path="external/zstd" name="SunOS-Project/android_external_zstd" remote="sun" />
+
+  <!-- Frameworks -->
+  <remove-project name="platform/frameworks/av" />
+  <project path="frameworks/av" name="SunOS-Project/android_frameworks_av" remote="sun" />
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="SunOS-Project/android_frameworks_base" remote="sun" />
+  <remove-project name="platform/frameworks/native" />
+  <project path="frameworks/native" name="SunOS-Project/android_frameworks_native" remote="sun" />
+  <remove-project name="platform/frameworks/opt/telephony" />
+  <project path="frameworks/opt/telephony" name="SunOS-Project/android_frameworks_opt_telephony" remote="sun" />
+
+  <!-- Hardware -->
+  <remove-project name="platform/hardware/broadcom/libbt" />
+  <project path="hardware/broadcom/libbt" name="SunOS-Project/android_hardware_broadcom_libbt" remote="sun" />
+  <remove-project name="platform/hardware/interfaces" />
+  <project path="hardware/interfaces" name="SunOS-Project/android_hardware_interfaces" remote="sun" />
+  <remove-project name="platform/hardware/libhardware" />
+  <project path="hardware/libhardware" name="SunOS-Project/android_hardware_libhardware" remote="sun" />
+  <project path="hardware/lineage/compat" name="SunOS-Project/android_hardware_lineage_compat" remote="sun" />
+  <project path="hardware/sun/interfaces" name="SunOS-Project/android_hardware_sun_interfaces" remote="sun" />
+  <remove-project name="platform/hardware/ril" />
+  <project path="hardware/ril" name="SunOS-Project/android_hardware_ril" remote="sun" />
+  <remove-project name="platform/hardware/st/nfc" />
+  <project path="hardware/st/nfc" name="SunOS-Project/android_hardware_st_nfc" remote="sun" />
+
+  <!-- Hardware qcom-caf -->
+  <remove-project name="platform/hardware/qcom/bootctrl" />
+  <project path="hardware/qcom-caf/bootctrl" name="SunOS-Project/android_hardware_qcom_bootctrl" remote="sun" />
+  <remove-project name="platform/hardware/qcom/thermal" />
+  <project path="hardware/qcom-caf/thermal" name="SunOS-Project/android_hardware_qcom_thermal" remote="sun" />
+  <remove-project name="platform/hardware/qcom/wlan" />
+  <project path="hardware/qcom-caf/wlan" name="SunOS-Project/android_hardware_qcom_wlan" remote="sun" />
+  <project path="hardware/qcom-caf/sm8650/audio/pal" name="SunOS-Project/android_vendor_qcom_opensource_arpal-lx" remote="sun" revision="varuna-caf-sm8650" />
+  <project path="hardware/qcom-caf/sm8650/audio/agm" name="SunOS-Project/android_vendor_qcom_opensource_agm" remote="sun" revision="varuna-caf-sm8650" />
+  <project path="hardware/qcom-caf/sm8650/audio/primary-hal" name="SunOS-Project/android_hardware_qcom_audio-ar" remote="sun" revision="varuna-caf-sm8650" />
+  <project path="hardware/qcom-caf/sm8650/dataipa" name="SunOS-Project/android_vendor_qcom_opensource_dataipa" remote="sun" revision="varuna-caf-sm8650" />
+  <project path="hardware/qcom-caf/sm8650/display" name="SunOS-Project/android_hardware_qcom_display" remote="sun" revision="varuna-caf-sm8650" />
+  <remove-project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" />
+  <project path="hardware/qcom-caf/sm8650/data-ipa-cfg-mgr" name="SunOS-Project/android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="sun" revision="varuna-caf-sm8650" />
+  <remove-project name="device/qcom/common" />
+  <project path="device/qcom/common" name="SunOS-Project/android_device_qcom_common" remote="sun" >
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8450/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8550/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8650/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />>
+  </project>
+
+  <!-- Manifest -->
+  <project path="manifest" name="SunOS-Project/android" remote="sun" />
+
+  <!-- SDclang -->
+  <project path="vendor/qcom/sdclang" name="SunOS-Project/proprietary_vendor_qcom_sdclang" clone-depth="1" remote="sun" />
+
+  <!-- sun-sdk -->
+  <project path="sun-sdk" name="SunOS-Project/android_sun-sdk" remote="sun" />
+
+  <!-- Packages apps -->
+  <remove-project name="platform/packages/apps/CarrierConfig" />
+  <project path="packages/apps/CarrierConfig" name="SunOS-Project/android_packages_apps_CarrierConfig" remote="sun" />
+  <project path="packages/apps/FaceUnlock" name="SunOS-Project/android_packages_apps_FaceUnlock" remote="sun" />
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <project path="packages/apps/Launcher3" name="SunOS-Project/android_packages_apps_Launcher3" remote="sun" />
+  <remove-project name="platform/packages/apps/Nfc" />
+  <project path="packages/apps/Nfc" name="SunOS-Project/android_packages_apps_Nfc" remote="sun" />
+  <project path="packages/apps/NrModeSwitcher" name="SunOS-Project/android_packages_apps_NrModeSwitcher" remote="sun" />
+  <remove-project name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="SunOS-Project/android_packages_apps_Settings" remote="sun" />
+  <project path="packages/apps/SystemTool" name="SunOS-Project/android_packages_apps_SystemTool" remote="sun" />
+  <project path="packages/apps/Updater" name="SunOS-Project/android_packages_apps_Updater" remote="sun" />
+
+  <!-- Packages modules -->
+  <remove-project name="platform/packages/modules/Bluetooth" />
+  <project path="packages/modules/Bluetooth" name="SunOS-Project/android_packages_modules_Bluetooth" remote="sun" />
+  <remove-project name="platform/packages/modules/Connectivity" />
+  <project path="packages/modules/Connectivity" name="SunOS-Project/android_packages_modules_Connectivity" remote="sun" />
+  <remove-project name="platform/packages/modules/NetworkStack" />
+  <project path="packages/modules/NetworkStack" name="SunOS-Project/android_packages_modules_NetworkStack" remote="sun" />
+  <remove-project name="platform/packages/modules/Permission" />
+  <project path="packages/modules/Permission" name="SunOS-Project/android_packages_modules_Permission" remote="sun" />
+  <remove-project name="platform/packages/modules/Virtualization" />
+  <project path="packages/modules/Virtualization" name="SunOS-Project/android_packages_modules_Virtualization" remote="sun" />
+  <remove-project name="platform/packages/modules/Wifi" />
+  <project path="packages/modules/Wifi" name="SunOS-Project/android_packages_modules_Wifi" remote="sun" />
+  <remove-project name="platform/packages/modules/adb" />
+  <project path="packages/modules/adb" name="SunOS-Project/android_packages_modules_adb" remote="sun" />
+  <remove-project name="platform/packages/modules/common" />
+  <project path="packages/modules/common" name="SunOS-Project/android_packages_modules_common" remote="sun" />
+
+  <!-- Packages providers -->
+  <remove-project name="platform/packages/providers/DownloadProvider" />
+  <project path="packages/providers/DownloadProvider" name="SunOS-Project/android_packages_providers_DownloadProvider" remote="sun" />
+
+  <!-- Packages services -->
+  <remove-project name="platform/packages/services/Telecomm" />
+  <project path="packages/services/Telecomm" name="SunOS-Project/android_packages_services_Telecomm" remote="sun" />
+  <remove-project name="platform/packages/services/Telephony" />
+  <project path="packages/services/Telephony" name="SunOS-Project/android_packages_services_Telephony" remote="sun" />
+
+  <!-- System -->
+  <remove-project name="platform/system/bpf" />
+  <project path="system/bpf" name="SunOS-Project/android_system_bpf" remote="sun" />
+  <remove-project name="platform/system/core" />
+  <project path="system/core" name="SunOS-Project/android_system_core" remote="sun" />
+  <remove-project name="platform/system/extras" />
+  <project path="system/extras" name="SunOS-Project/android_system_extras" remote="sun" />
+  <remove-project name="platform/system/keymaster" />
+  <project path="system/keymaster" name="SunOS-Project/android_system_keymaster" remote="sun" />
+  <remove-project name="platform/system/libhidl" />
+  <project path="system/libhidl" name="SunOS-Project/android_system_libhidl" remote="sun" />
+  <remove-project name="platform/system/libziparchive" />
+  <project path="system/libziparchive" name="SunOS-Project/android_system_libziparchive" remote="sun" />
+  <remove-project name="platform/system/logging" />
+  <project path="system/logging" name="SunOS-Project/android_system_logging" remote="sun" />
+  <remove-project name="platform/system/netd" />
+  <project path="system/netd" name="SunOS-Project/android_system_netd" remote="sun" />
+  <remove-project name="platform/system/sepolicy" />
+  <project path="system/sepolicy" name="SunOS-Project/android_system_sepolicy" remote="sun" />
+  <remove-project name="platform/system/tools/mkbootimg" />
+  <project path="system/tools/mkbootimg" name="SunOS-Project/android_system_tools_mkbootimg" remote="sun" />
+  <remove-project name="platform/system/update_engine" />
+  <project path="system/update_engine" name="SunOS-Project/android_system_update_engine" remote="sun" />
+  <remove-project name="platform/system/vold" />
+  <project path="system/vold" name="SunOS-Project/android_system_vold" remote="sun" />
+
+  <!-- Sepolicy -->
+  <project path="device/sun/sepolicy" name="SunOS-Project/android_device_sun_sepolicy" remote="sun" />
+  <remove-project name="device/qcom/sepolicy_vndr" />
+  <project path="device/qcom/sepolicy_vndr/sm8650" name="SunOS-Project/android_device_qcom_sepolicy_vndr" remote="sun" revision="varuna-caf-sm8650" />
+ 
+  <!-- Vendor -->
+  <project path="vendor/google/gms" name="SunOS-Project/proprietary_vendor_google_gms" remote="sun" clone-depth="1"  />
+  <project path="vendor/google/pixel" name="SunOS-Project/proprietary_vendor_google_pixel" remote="sun" clone-depth="1"  />
+  <project path="vendor/google/extras" name="SunOS-Project/proprietary_vendor_google_extras" remote="sun" clone-depth="1"  />
+  <project path="vendor/configs" name="SunOS-Project/android_vendor_configs" remote="sun" />
+  <project path="vendor/sun" name="SunOS-Project/android_vendor_sun" remote="sun" />
+
+  <!-- Vendor qcom -->
+  <remove-project name="platform/vendor/codeaurora/telephony" />
+  <project path="vendor/codeaurora/telephony" name="SunOS-Project/android_vendor_codeaurora_telephony" remote="sun" />
+  <remove-project name="platform/vendor/nxp/opensource/external/libnfc-nci" />
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="SunOS-Project/android_vendor_nxp_opensource_commonsys_external_libnfc-nci" remote="sun" />
+  <project path="vendor/qcom/common" name="SunOS-Project/proprietary_vendor_qcom_common" remote="sun" />
+  <remove-project name="platform/vendor/qcom-opensource/core-utils" />
+  <!-- <remove-project name="platform/vendor/qcom-opensource/audio-hal/st-hal-ar" /> -->
+  <project path="vendor/qcom/opensource/audio-hal/st-hal-ar" name="SunOS-Project/android_vendor_qcom_opensource_audio-hal_st-hal-ar" remote="sun" />
+  <remove-project name="platform/vendor/qcom-opensource/audio" />
+  <project path="vendor/qcom/opensource/commonsys/audio" name="SunOS-Project/android_vendor_qcom_opensource_commonsys_audio" remote="sun" />
+  <!-- <remove-project name="platform/vendor/qcom-opensource/wfd-commonsys" /> -->
+  <project path="vendor/qcom/opensource/commonsys/wfd" name="SunOS-Project/android_vendor_qcom_opensource_wfd-commonsys" remote="sun" />
+  <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="SunOS-Project/android_vendor_qcom_opensource_commonsys-intf_bluetooth" remote="sun" />
+  <project path="vendor/qcom/opensource/core-utils" name="SunOS-Project/android_vendor_qcom_opensource_core-utils" remote="sun" />
+  <remove-project name="platform/vendor/qcom-opensource/core-utils-sys" />
+  <project path="vendor/qcom/opensource/core-utils-sys" name="SunOS-Project/android_vendor_qcom_opensource_core-utils-sys" remote="sun" />
+  <remove-project name="platform/vendor/qcom-opensource/core-utils-vendor" />
+  <project path="vendor/qcom/opensource/core-utils-vendor" name="SunOS-Project/android_vendor_qcom_opensource_core-utils-vendor" remote="sun" />
+  <remove-project name="platform/vendor/qcom-opensource/dataservices" />
+  <project path="vendor/qcom/opensource/dataservices" name="SunOS-Project/android_vendor_qcom_opensource_dataservices" remote="sun" />
+  <!-- <remove-project name="platform/vendor/qcom-opensource/display" /> -->
+  <project path="vendor/qcom/opensource/display" name="SunOS-Project/android_vendor_qcom_opensource_display" remote="sun" />
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="SunOS-Project/android_vendor_qcom_opensource_display-commonsys" remote="sun" />
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="SunOS-Project/android_vendor_qcom_opensource_display-commonsys-intf" remote="sun" />
+  <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
+  <project path="vendor/qcom/opensource/commonsys/fm" name="SunOS-Project/android_vendor_qcom_opensource_fm-commonsys" remote="sun" />
+  <remove-project name="platform/vendor/qcom-opensource/healthd-ext" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="SunOS-Project/android_vendor_qcom_opensource_healthd-ext" remote="sun" />
+  <remove-project name="platform/vendor/qcom-opensource/interfaces" />
+  <project path="vendor/qcom/opensource/interfaces" name="SunOS-Project/android_vendor_qcom_opensource_interfaces" remote="sun" />
+  <remove-project name="platform/vendor/qcom-opensource/power" />
+  <project path="vendor/qcom/opensource/power" name="SunOS-Project/android_vendor_qcom_opensource_power" remote="sun" />
+  <remove-project name="platform/vendor/qcom-opensource/thermal-engine" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="SunOS-Project/android_vendor_qcom_opensource_thermal-engine" remote="sun" />
+  <remove-project name="platform/vendor/qcom-opensource/usb" />
+  <project path="vendor/qcom/opensource/usb" name="SunOS-Project/android_vendor_qcom_opensource_usb" remote="sun" />
+  <remove-project name="platform/vendor/qcom-opensource/vibrator" />
+  <project path="vendor/qcom/opensource/vibrator" name="SunOS-Project/android_vendor_qcom_opensource_vibrator" remote="sun" />
+
+</manifest>

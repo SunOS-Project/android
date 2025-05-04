@@ -2,6 +2,10 @@
 <manifest>
   <remote name="github" fetch="https://github.com"/>
   <remote name="github-ssh" fetch="ssh://git@github.com"/>
+  <remote name="sun" fetch=".." revision="varuna"/>
+  <remote name="aospa" fetch="https://github.com/AOSPA" revision="vauxite"/>
+  <remote name="aosp" fetch="https://android.googlesource.com" sync-c="true" sync-tags="false" review="https://android-review.googlesource.com/" revision="refs/tags/android-15.0.0_r5" />
+  <remote name="lineage" fetch="https://github.com/LineageOS" revision="lineage-22.2" />
   <!-- CLO -->
   <remote name="clo-la" fetch="https://git.codelinaro.org/clo/la" sync-c="true" sync-tags="false"/>
   <default remote="clo-la"/>
@@ -9,4 +13,12 @@
   <include name="snippets/vendor.xml"/>
   <!-- Obsolete -->
   <include name="snippets/obsolete.xml"/>
+  <!-- SunOS -->
+  <include name="snippets/sun.xml" />
+  <!-- Aospa -->
+  <include name="snippets/aospa.xml" />
+  <!-- Aosp -->
+  <include name="snippets/aosp.xml" />
+  <!-- LineageOS -->
+  <include name="snippets/lineage.xml" />
 </manifest>

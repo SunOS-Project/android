@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Bootable -->
+  <project path="bootable/deprecated-ota" name="platform/bootable/deprecated-ota" remote="aosp" />
+
+  <!-- CTS -->
+  <remove-project name="platform/cts" />
+  <project path="cts" name="platform/cts" remote="aosp" clone-depth="1" />
+
+  <!-- External -->
+  <remove-project name="platform/external/chromium-webview" />
+  <project path="external/chromium-webview" name="platform/external/chromium-webview" remote="aosp" clone-depth="1" />
+  <project path="external/tinyxml" name="platform/external/tinyxml" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
+
+  <!-- Hardware -->
+  <project path="hardware/google/pixel" name="platform/hardware/google/pixel" remote="aosp" revision="refs/tags/android-15.0.0_r6" />
+
+  <!-- prebuilt repos -->
+  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="main-kernel-build-2024" />
+
+</manifest>

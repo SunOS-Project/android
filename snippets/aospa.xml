@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- ThemePicker -->
+  <project path="vendor/aospa/apps/ParanoidThemePicker" name="vendor_aospa_apps_ParanoidThemePicker" clone-depth="1" remote="aospa" />
+
+</manifest>
