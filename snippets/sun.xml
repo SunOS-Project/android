@@ -48,6 +48,8 @@
   <project path="external/arm-optimized-routines" name="SunOS-Project/android_external_arm-optimized-routines" remote="sun" />
   <remove-project name="platform/external/avb" />
   <project path="external/avb" name="SunOS-Project/android_external_avb" remote="sun" />
+  <remove-project name="platform/external/bouncycastle" />
+  <project path="external/bouncycastle" name="SunOS-Project/android_external_bouncycastle" remote="sun" />
   <remove-project name="platform/external/cronet" />
   <project path="external/cronet" name="SunOS-Project/android_external_cronet" remote="sun" />
   <remove-project name="platform/external/dtc" />
