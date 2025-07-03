@@ -80,6 +80,8 @@
   <project path="frameworks/av" name="SunOS-Project/android_frameworks_av" remote="sun" />
   <remove-project name="platform/frameworks/base" />
   <project path="frameworks/base" name="SunOS-Project/android_frameworks_base" remote="sun" />
+  <remove-project name="platform/frameworks/libs/systemui" />
+  <project path="frameworks/libs/systemui" name="SunOS-Project/android_frameworks_libs_systemui" remote="sun" />
   <remove-project name="platform/frameworks/native" />
   <project path="frameworks/native" name="SunOS-Project/android_frameworks_native" remote="sun" />
   <remove-project name="platform/frameworks/opt/telephony" />
@@ -150,6 +152,8 @@
   <remove-project name="platform/packages/apps/Settings" />
   <project path="packages/apps/Settings" name="SunOS-Project/android_packages_apps_Settings" remote="sun" />
   <project path="packages/apps/SystemTool" name="SunOS-Project/android_packages_apps_SystemTool" remote="sun" />
+  <remove-project name="platform/packages/apps/ThemePicker" />
+  <project path="packages/apps/ThemePicker" name="SunOS-Project/android_packages_apps_ThemePicker" remote="sun" />
   <project path="packages/apps/Updater" name="SunOS-Project/android_packages_apps_Updater" remote="sun" />
 
   <!-- Packages modules -->
