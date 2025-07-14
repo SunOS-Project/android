@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- Bootable -->
-  <project path="bootable/deprecated-ota" name="platform/bootable/deprecated-ota" remote="aosp" />
-
   <!-- External -->
   <project path="external/tinyxml" name="platform/external/tinyxml" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
 
   <!-- Hardware -->
-  <project path="hardware/google/pixel" name="platform/hardware/google/pixel" remote="aosp" revision="refs/tags/android-15.0.0_r6" />
+  <project path="hardware/google/pixel" name="platform/hardware/google/pixel" remote="aosp" />
 
   <!-- prebuilt repos -->
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="main-kernel-build-2024" />

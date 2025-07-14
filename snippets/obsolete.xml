@@ -31,6 +31,7 @@
   <remove-project name="platform/vendor/opensource/mm-sys-kernel" />
   <remove-project name="platform/vendor/opensource/synx-kernel" />
   <remove-project name="platform/vendor/opensource/touch-drivers" />
+  <remove-project name="platform/vendor/qcom-opensource/data-kernel" />
   <remove-project name="platform/vendor/qcom-opensource/fingerprint" />
   <remove-project name="platform/vendor/qcom-opensource/location" />
   <remove-project name="platform/vendor/qcom-opensource/wigig" />
