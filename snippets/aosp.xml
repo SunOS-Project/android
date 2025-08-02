@@ -4,10 +4,6 @@
   <!-- Bootable -->
   <project path="bootable/deprecated-ota" name="platform/bootable/deprecated-ota" remote="aosp" />
 
-  <!-- CTS -->
-  <remove-project name="platform/cts" />
-  <project path="cts" name="platform/cts" remote="aosp" clone-depth="1" />
-
   <!-- External -->
   <remove-project name="platform/external/chromium-webview" />
   <project path="external/chromium-webview" name="platform/external/chromium-webview" remote="aosp" clone-depth="1" />
