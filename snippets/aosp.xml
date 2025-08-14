@@ -5,8 +5,6 @@
   <project path="bootable/deprecated-ota" name="platform/bootable/deprecated-ota" remote="aosp" />
 
   <!-- External -->
-  <remove-project name="platform/external/chromium-webview" />
-  <project path="external/chromium-webview" name="platform/external/chromium-webview" remote="aosp" clone-depth="1" />
   <project path="external/tinyxml" name="platform/external/tinyxml" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
 
   <!-- Hardware -->
