@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- google/pixel apps -->
+  <project path="vendor/pixel/extract-utils" name="PixelOS-AOSP/android_vendor_pixel_extract-utils" remote="gitlab" revision="sixteen">
+    <linkfile src="extract-all.sh" dest="vendor/pixel/extract-all.sh" />
+  </project>
+  <project path="vendor/pixel/clocks" name="PixelOS-AOSP/proprietary_vendor_pixel_clocks" remote="gitlab" revision="sixteen" />
+  <project path="vendor/pixel/gms" name="PixelOS-AOSP/proprietary_vendor_pixel_gms" remote="gitlab" revision="sixteen" />
+  <project path="vendor/pixel/gsans" name="PixelOS-AOSP/proprietary_vendor_pixel_gsans" remote="gitlab" revision="sixteen" />
+  <project path="vendor/pixel/launcher" name="PixelOS-AOSP/proprietary_vendor_pixel_launcher" remote="gitlab" revision="sixteen" />
+  <project path="vendor/pixel/sounds" name="PixelOS-AOSP/proprietary_vendor_pixel_sounds" remote="gitlab" revision="sixteen" />
+  <project path="vendor/pixel/themepicker" name="PixelOS-AOSP/proprietary_vendor_pixel_themepicker" remote="gitlab" revision="sixteen" />
+
+</manifest>
