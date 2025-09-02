@@ -126,6 +126,7 @@
   <project path="packages/apps/SettingsIntelligence" name="SunOS-Project/android_packages_apps_SettingsIntelligence" remote="sun" />
   <project path="packages/apps/LineageParts" name="SunOS-Project/android_packages_apps_SunParts" remote="sun" />
   <project path="packages/apps/Updater" name="SunOS-Project/android_packages_apps_Updater" remote="sun" />
+  <project path="packages/apps/ParanoidSense" name="SunOS-Project/android_packages_apps_ParanoidSense" remote="sun" />
 
   <!-- Packages modules -->
   <remove-project name="platform/packages/modules/Bluetooth" />
