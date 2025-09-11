@@ -106,6 +106,7 @@
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8750/Android.bp" />
   </project>
 
   <!-- Manifest -->
@@ -180,6 +181,7 @@
   <project path="device/lineage/sepolicy" name="SunOS-Project/android_device_sun_sepolicy" remote="sun" />
   <remove-project name="device/qcom/sepolicy_vndr" />
   <project path="device/qcom/sepolicy_vndr/sm8650" name="SunOS-Project/android_device_qcom_sepolicy_vndr" remote="sun" revision="bienor-caf-sm8650" />
+  <project path="device/qcom/sepolicy_vndr/sm8750" name="SunOS-Project/android_device_qcom_sepolicy_vndr" remote="sun" revision="bienor-caf-sm8750" />
  
   <!-- Vendor -->
   <project path="vendor/gms_spoof" name="SunOS-Project/android_vendor_gms_spoof" remote="sun" revision="master" />
