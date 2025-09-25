@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Bootable -->
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="sun" />
+
+  <!-- External -->
+  <project path="external/bouncycastle" name="android_external_bouncycastle" groups="pdk" remote="sun" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="sun" />
+
+  <!-- Infrastructure -->
+  <project path="android" name="android" remote="sun" />
+  <project path="OTA" name="OTA" remote="sun" />
+
+  <!-- Packages -->
+  <project path="packages/apps/LineageParts" name="android_packages_apps_SunParts" remote="sun" />
+  <project path="packages/apps/ParanoidSense" name="android_packages_apps_ParanoidSense" remote="sun" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="sun" />
+  <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="sun"/>
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="sun" />
+
+  <!-- Sdk -->
+  <project path="lineage-sdk" name="android_sun-sdk" remote="sun" />
+
+  <!-- Sepolicy -->
+  <project path="device/lineage/sepolicy" name="android_device_sun_sepolicy" remote="sun" />
+  <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="sun" />
+
+  <!-- System -->
+  <project path="system/core" name="android_system_core" groups="pdk" remote="sun" />
+  <project path="system/update_engine" name="android_system_update_engine" groups="pdk" remote="sun" />
+
+  <!-- Vendor -->
+  <project path="vendor/gms_spoof" name="android_vendor_gms_spoof" remote="sun" revision="master" />
+  <project path="vendor/google/overlays" name="android_vendor_google_overlays" remote="sun" />
+  <project path="vendor/lineage" name="android_vendor_sun" remote="sun" />
+
+</manifest>
