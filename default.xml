@@ -23,6 +23,9 @@
            sync-c="true"
            sync-j="4" />
 
+  <remote  name="gitlab"
+           fetch="https://gitlab.com" />
+
   <contactinfo bugurl="go/repo-bug" />
 
   <!-- AOSP Projects -->
@@ -1008,5 +1011,6 @@
   </project>
 
   <include name="snippets/lineage.xml" />
+  <include name="snippets/pixel.xml" />
   <include name="snippets/sun.xml" />
 </manifest>
