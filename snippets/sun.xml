@@ -98,6 +98,8 @@
   <project path="hardware/sun/interfaces" name="SunOS-Project/android_hardware_sun_interfaces" remote="sun" />
   <remove-project name="platform/hardware/ril" />
   <project path="hardware/ril" name="SunOS-Project/android_hardware_ril" remote="sun" />
+  <remove-project name="platform/hardware/nxp/nfc" />
+<project path="hardware/nxp/nfc" name="SunOS-Project/android_hardware_nxp_nfc" remote="sun" />
   <remove-project name="platform/hardware/st/nfc" />
   <project path="hardware/st/nfc" name="SunOS-Project/android_hardware_st_nfc" remote="sun" />
 
